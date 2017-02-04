@@ -129,7 +129,7 @@ class DataBase {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306", user, password);
             stmt = con.createStatement();
             stmt.execute(s); 
-            System.out.println("База создана или уже существует.");
+            System.out.println("Base was created or already exists.");
             con.close();
             stmt.close();
                   
@@ -149,7 +149,7 @@ class DataBase {
             con = DriverManager.getConnection(url, user, password);
             stmt = con.createStatement();
             stmt.execute(s); 
-            System.out.println("Таблица создана или уже существует.");
+            System.out.println("Table was created or already exists.");
             con.close();
             stmt.close();
                   
